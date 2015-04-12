@@ -4,7 +4,8 @@
 # April 2014
 # Hector Casavantes
 
-# NOTE: My languaje locale is in non-english, weekdays will be seen in spanish
+# NOTE: My languaje locale is in non-english, weekdays will be seen in ok with this
+Sys.setlocale("LC_ALL", "English")
 
 # File supposed to be unzipped an placed under "data" subdirectory
 url <- 'data/household_power_consumption.txt' ;
