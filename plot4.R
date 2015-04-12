@@ -31,7 +31,8 @@ with( data, {
   plot( DateTime, Sub_metering_1, type="l", ylab = "Energy Sub Metering", xlab = "", col="black" )
   lines( DateTime, Sub_metering_2, col = "red" )
   lines( DateTime, Sub_metering_3, col = "blue" )
-  legend( "topright", c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), lty=c("solid","solid","solid"), col=c("black", "blue","red")) })
+  legend( "topright", c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), lty=c("solid","solid","solid"), col=c("black", "blue","red"),
+          bty = "n" ) })
 with( data, plot( DateTime, Voltage, type="l" ) )
 with( data, plot( DateTime, Global_reactive_power, type="l" ) )
 par( mfcol = c(1,1) )
